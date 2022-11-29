@@ -31,3 +31,13 @@ RUS = {'А': '.-', 'Б': '-...', 'В': '.--',
        '0': '-----', ', ': '--..--', '.': '.-.-.-',
        '?': '..--..', '/': '-..-.', '-': '-....-',
        '(': '-.--.', ')': '-.--.-'}
+
+
+def table(lang: str) -> dict:
+    match(lang.lower()):
+        case 'ru':
+            return RUS
+        case 'en':
+            return ENG
+        case _:
+            raise NotImplementedError(f"lang {lang} not in list of supported (ru, en)")
