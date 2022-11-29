@@ -1,19 +1,4 @@
-
-STORAGE = {'A': '.-', 'B': '-...',
-           'C': '-.-.', 'D': '-..', 'E': '.',
-           'F': '..-.', 'G': '--.', 'H': '....',
-           'I': '..', 'J': '.---', 'K': '-.-',
-           'L': '.-..', 'M': '--', 'N': '-.',
-           'O': '---', 'P': '.--.', 'Q': '--.-',
-           'R': '.-.', 'S': '...', 'T': '-',
-           'U': '..-', 'V': '...-', 'W': '.--',
-           'X': '-..-', 'Y': '-.--', 'Z': '--..',
-           '1': '.----', '2': '..---', '3': '...--',
-           '4': '....-', '5': '.....', '6': '-....',
-           '7': '--...', '8': '---..', '9': '----.',
-           '0': '-----', ', ': '--..--', '.': '.-.-.-',
-           '?': '..--..', '/': '-..-.', '-': '-....-',
-           '(': '-.--.', ')': '-.--.-'}
+from alphabets import RUS, ENG
 
 
 def encode(message: str, storage) -> str:
@@ -41,9 +26,16 @@ def decode(message: str, storage) -> str:
 
 
 if __name__ == '__main__':
-    print(decode('... --- ...', STORAGE) == 'SOS')
-    print(encode('sos', STORAGE))
+    print(decode('... --- ...', ENG) == 'SOS')
+    print(encode('sos', ENG))
     try:
-        print(encode('привет', STORAGE))
+        print(encode('привет', ENG))
+    except NotImplementedError as e:
+        print(e)
+
+    print(decode('... --- ...', RUS) == 'СОС')
+    print(encode('сос', RUS))
+    try:
+        print(encode('hello', RUS))
     except NotImplementedError as e:
         print(e)
