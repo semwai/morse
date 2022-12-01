@@ -1,4 +1,4 @@
-# Morse code 
+# Morse code v1.0.0
 
 ## service for converting morse code to text and vice versa
 
