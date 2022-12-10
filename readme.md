@@ -1,4 +1,4 @@
-# Morse code v1.0.0
+# Morse code v1.1.0
 
 ## service for converting morse code to text and vice versa
 
@@ -93,3 +93,7 @@ curl -X 'GET' \
 ```
 
 ## open [localhost:88/docs](localhost:88/docs]) in your browser for swagger UI interactive documentation
+
+## Changelog 1.0.0 -> 1.1.0
+- add tests
+- fix encode bug
