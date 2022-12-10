@@ -2,6 +2,13 @@
 
 ## service for converting morse code to text and vice versa
 
+## Run tests
+```bash
+pipenv shell
+pipenv install 
+pytest
+```
+
 ## Run server: 
 
 ```bash
