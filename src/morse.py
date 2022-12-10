@@ -8,8 +8,8 @@ def encode(message: str, storage) -> str:
     for i in message.upper():
         if (m := storage.get(i)) is None:
             raise NotImplementedError(f"letter {i} not supported")
-        out += m
-    return " ".join(out)
+        out += f" {m}"
+    return "".join(out[1:]) if len(out) > 0 else ""
 
 
 def decode(message: str, storage) -> str:
