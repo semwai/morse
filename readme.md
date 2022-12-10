@@ -1,5 +1,6 @@
-# Morse code v1.1.0
-
+# Morse code v1.2.0
+### master [![Test pipeline](https://github.com/semwai/morse/actions/workflows/pytest.yml/badge.svg?branch=master)](https://github.com/semwai/morse/actions/workflows/pytest.yml)
+### develop [![Test pipeline](https://github.com/semwai/morse/actions/workflows/pytest.yml/badge.svg?branch=develop)](https://github.com/semwai/morse/actions/workflows/pytest.yml)
 ## service for converting morse code to text and vice versa
 
 ## Run tests
@@ -94,6 +95,8 @@ curl -X 'GET' \
 
 ## open [localhost:88/docs](localhost:88/docs]) in your browser for swagger UI interactive documentation
 
+## Changelog 1.1.0 -> 1.2.0
+- add github actions
 ## Changelog 1.0.0 -> 1.1.0
 - add tests
 - fix encode bug
